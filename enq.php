@@ -37,9 +37,9 @@ if(strlen($ POST["name"]) != 0){
       </p>
     <?php else: ?>
       <p>enquete入力に不備があります。enquete入力画面に戻って再入力してください。</p>
-    <?php endif: ?>
-      <footer>
-        <p><small>&copy;copyright 2017 y.yanagi</small></p>
-      </footer>
+    <?php endif; ?>
+    <footer>
+      <p><small>&copy;copyright 2017 y.yanagi</small></p>
+    </footer>
   </body>
 </html>
