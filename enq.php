@@ -1,8 +1,8 @@
 <?php
-if(strlen($ POST["name"]) != 0){
+if(strlen($_POST["name"]) != 0){
   $name = $_POST["name"];
   $course = $_POST["course"];
-  $menu = $_post["menu"];
+  $menu = $_POST["menu"];
 
   $fp = fopen("./result.csv", "a+");
   flock($fp, LOCK_EX);
