@@ -32,7 +32,7 @@
             if(count($content) == 3){
               echo "<p>".$count;
               echo ":<strong>名前: $content[0]</strong>  ";
-              echo "投稿日時:<time>$content[1]</time><br>$content[2]</p>\n"
+              echo "投稿日時:<time>$content[1]</time><br>$content[2]</p>\n";
               echo "<hr>\n";
               $count++;
             }
