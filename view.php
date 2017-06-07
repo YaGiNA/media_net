@@ -24,17 +24,21 @@
         if(is_readable("./log.csv")){
           $fp = fopen("./log.csv", "r");
           flock($fp, LOCK_SH);
-          $count = 1;
+          $contents = array();
 
-          while (!feof($fp)) {
-            $line = fgets($fp);
+          while ($line = fgets($fp)) {
             $content = explode(",", $line);
+            array_push($contents, $content);
+          }
+          $count = 0;
+          for($i=count($contents)-1; $i>=0; $i--){
             if(count($content) == 3){
+              $count++;
+              $content = $contents[$i];
               echo "<p>".$count;
               echo ":<strong>名前: $content[0]</strong>  ";
-              echo "投稿日時:<time>$content[1]</time><br>$content[2]</p>\n";
-              echo "<hr>\n";
-              $count++;
+              echo "投稿日時:<time>$content[1]</time><br>$content[2]</p>";
+              echo "<hr>";
             }
           }
           flock($fp, LOCK_UN);
