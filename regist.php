@@ -1,6 +1,6 @@
 <?php
   $id = htmlspecialchars($_POST["id"]);
-  $id = htmlspecialchars($_POST["pw"]);
+  $pw = htmlspecialchars($_POST["pw"]);
   $filename = "./list.csv";
 
   // Check of space
