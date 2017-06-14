@@ -25,7 +25,7 @@
     exit("This ID is already exists.");
   }
   else{
-    fputcsv($fp, Arrat($id, hash("sha256", $pw)));
+    fputcsv($fp, Array($id, hash("sha256", $pw)));
   }
   flock($fp, LOCK_UN);
   fclose($fp);
