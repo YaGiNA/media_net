@@ -5,7 +5,7 @@
 
   // Check of space
   if(strcmp($id, "") == 0 || strcmp($pw, "") == 0){
-    exit("Error: ID or password is not given.")
+    exit("Error: ID or password is not given.");
   }
 
   if(!file_exists($filename)){
