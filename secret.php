@@ -17,8 +17,8 @@
   </head>
   <body>
     <header>
-      <h1>こんにちは</h1>
-
+      <h1>ようこそ</h1>
+      <?php echo $name."さん"; ?>
     </header>
     ﾅｲﾈー　ﾅﾆﾓﾅｲﾈー
   </body>

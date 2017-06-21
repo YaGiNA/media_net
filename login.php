@@ -2,7 +2,7 @@
   $id = htmlspecialchars($_POST["id"]);
   $pw = htmlspecialchars($_POST["pw"]);
   $filename = "./list.csv";
-  $dest = "./secret.html";
+  $dest = "./secret.php";
 
   // check of null
   if(strcmp($id, "") == 0 || strcmp($pw, "") == 0){
