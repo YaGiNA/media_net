@@ -32,6 +32,7 @@
 
   // Move to userpage when identifying of ID + PW is succeeded.
   if ($flag) {
+    setcookie("id", $id, time()+30);
     header("HTTP/1.1 301 Moved Permanetly");
     header("Location: $dest");
     exit;
