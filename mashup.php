@@ -19,7 +19,7 @@
     }
 
     $url = "http://weather.livedoor.com/forecast/webservice/json/v1?city=130010";
-    $res = uec_file_get_contents($url, False, $cxContext);
+    $res = uec_file_get_contents($url);
     $json = json_decode($res, $assoc = true);
 
     date_default_timezone_set('Asia/Tokyo');
