@@ -2,7 +2,7 @@
   $id = htmlspecialchars($_POST["id"]);
   $pw = htmlspecialchars($_POST["pw"]);
   $filename = "./list.csv";
-  $dest = "./secret.html";
+  $dest = "./secret.php";
 
   // check of null
   if(strcmp($id, "") == 0 || strcmp($pw, "") == 0){
@@ -32,6 +32,7 @@
 
   // Move to userpage when identifying of ID + PW is succeeded.
   if ($flag) {
+    setcookie("id", $id, time()+30);
     header("HTTP/1.1 301 Moved Permanetly");
     header("Location: $dest");
     exit;
