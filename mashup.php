@@ -27,7 +27,7 @@
 
     foreach ($json["forecasts"] as $key) {
       if(strcmp($key["date"], $day) == 0){
-        $datelabel = $key["datelabel"];
+        $datelabel = $key["dateLabel"];
         $telop = $key["telop"];
         $image = $key["image"]["url"];
 
