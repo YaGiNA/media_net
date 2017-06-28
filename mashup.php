@@ -12,7 +12,7 @@
           'request_fulluri' => True,
         ),
       );
-      %cxContext = stream_context_create($aContext);
+      $cxContext = stream_context_create($aContext);
 
       $res = file_get_contents($url, False, $cxContext);
       return $res;
