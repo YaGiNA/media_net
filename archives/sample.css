@@ -1,0 +1,39 @@
+h1{
+  background-color: #f0f0f0;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  border-left-width: 1em;
+  border-left-style: double;
+  border-left-color: teal;
+  border-right-width: 1em;
+  border-right-style: double;
+  border-right-color: teal;
+  border-bottom-width: 3px;
+  border-bottom-style: double;
+  border-bottom-color: teal;
+}
+
+h2{
+  color: #000099;
+  padding-left: 10px;
+  border-width: 0px 0px 2px 15px;
+  border-style: solid;
+  border-color: #9999ff;
+}
+
+div.heading{
+  width: 578px;
+  margin-bottom: 1em;
+  padding: 7px 11px;
+  background: #ebe6cb url(heading_back.gif) repeat-y right;
+}
+
+div.heading h3{
+  color: #333399;
+  margin: 0;
+  padding: 3px 0 0 16px;
+  background: url(heading_square.gif) no-repeat 0 0.2em;
+  font-size: 100%;
+  line-height: 100%;
+}
