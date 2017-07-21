@@ -176,6 +176,9 @@ h1.title {
 
 img {
 	display: block;
+}
+
+img.full{
   width: 100%;
 }
 
