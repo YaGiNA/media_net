@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>Museums</title>
+<title>Enquete</title>
 <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
 <link rel="stylesheet" type="text/css" href="style.css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
@@ -66,40 +66,32 @@
 
 	<!-- Begin Content -->
 	<div id="content">
-	<h1 class="title">Welcome</h1>
+	<h1 class="title">Enquete</h1>
 	<div class="line"></div>
-	<div class="intro">Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
+	<div class="intro">アンケートページ</div>
 
-	<!-- Begin Slider -->
-	<div id="slider">
+    <h3>アンケートフォーム</h3>
 
-		<div class="flexslider">
-	    <ul class="slides">
-	    	<li><img src="style/images/art/slide1.jpg" class="full" alt=""/></li>
-	    	<li><img src="style/images/art/slide2.jpg" class="full" alt=""/></li>
-	    	<li><img src="style/images/art/slide3.jpg" class="full" alt=""/></li>
-	    	<li><img src="style/images/art/slide4.jpg" class="full" alt=""/></li>
-	    </ul>
-	  </div>
-
-	</div>
-    <!-- End Slider -->
+    <p>以下の値を入力してください。</p>
 
 
-    <h3>Ipsum Tortor Vestibulum Sollicitudin</h3>
-
-    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-
-
+		<form  method="post" action="enq_museum.php">
     <div class="one-half">
-    <h3><img src="style/images/icon-web.png" alt="" />Web Design</h3>
-    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+    <h3>名前</h3>
+    <p><label>入力:</label><input type="text" name="name"></p>
     </div>
 
     <div class="one-half last">
-    <h3><img src="style/images/icon-illus.png" alt="" />Illustration</h3>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    <h3>コース</h3>
+    <p>
+			<label>選択: <br></label>
+			<label for="md_radio">
+				<input type="radio" id="md_radio" name="course" value="md" checked>メディア情報学 <br>
+			</label>
+			<label for="sc_radio">
+		  	<input type="radio" id="sc_radio" name="course" value="sc">セキュリティ情報学 <br>
+			</label>
+		</p>
     </div>
 
     <div class="clear"></div>
@@ -107,51 +99,44 @@
 
 
     <div class="one-half">
-    <h3><img src="style/images/icon-motion.png" alt="" />Motion Graphic</h3>
-    <p>Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</p>
+    <h3>行ったことがある博物館・美術館</h3>
+    <p>
+			<label for="kahaku_box_vi">
+			  <input type="checkbox" id="kahaku_box_vi" name="visited" value="kahaku_vi" >国立科学博物館<br>
+		  </label>
+			<label for="nmwa_box_vi">
+			  <input type="checkbox" id="nmwa_box_vi" name="visited" value="nmwa_vi" >国立西洋美術館<br>
+			</label>
+			<label for="tnm_box_vi">
+				<input type="checkbox" id="tnm_box_vi" name="visited" value="tnm_vi" >東京国立博物館<br>
+			</label>
+			<label for="parasite_box_vi">
+			  <input type="checkbox" id="parasite_box_vi" name="visited" value="parasite_vi" >目黒寄生虫館<br>
+			</label>
+		</p>
     </div>
 
     <div class="one-half last">
-    <h3><img src="style/images/icon-pack.png" alt="" />Package Design</h3>
-    <p>Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, posuere velit aliquet. Donec id elit non mi porta gravida. </p>
-    </div>
+			<h3>行ってみたい博物館・美術館</h3>
+	    <p>
+				<label for="kahaku_box_wa">
+				  <input type="checkbox" id="kahaku_box_wa" name="want" value="kahaku_wa" >国立科学博物館<br>
+			  </label>
+				<label for="nmwa_box_wa">
+				  <input type="checkbox" id="nmwa_box_wa" name="want" value="nmwa_wa" >国立西洋美術館<br>
+				</label>
+				<label for="tnm_box_wa">
+					<input type="checkbox" id="tnm_box_wa" name="want" value="tnm_wa" >東京国立博物館<br>
+				</label>
+				<label for="parasite_box_wa">
+				  <input type="checkbox" id="parasite_box_wa" name="want" value="parasite_wa" >目黒寄生虫館<br>
+				</label>
+			</p>
+		</div>
+		<input type="submit" value="送る">
+		</form>
 
     <div class="clear"></div>
-
-    <div class="line"></div>
-
-    <!-- Begin Latest Works -->
-    <h2>Latest Works</h2>
-    <div class="carousel">
-      <div id="carousel-scroll"><a href="#" id="prev"></a><a href="#" id="next"></a></div>
-      <ul>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p1.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p2.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p3.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p4.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p5.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p6.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p7.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p8.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p9.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p10.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p11.jpg" alt="" /> </a> </li>
-        <li> <a href="#"> <span class="overlay details"></span><img src="style/images/art/p12.jpg" alt="" /> </a> </li>
-      </ul>
-    </div>
-    <!-- End Latest Works -->
-
-    <div class="line"></div>
-
-    <h3>Malesuada Condimentum Inceptos Vehicula</h3>
-    <p>Sed posuere consectetur est at lobortis. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-
-    <ul>
-    <li>Sed posuere consectetur est at lobortis, Nullam id dolor id nibh ultricies vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-	<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-	<li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-    </ul>
-
 
     <!-- Begin Footer -->
     <div id="footer">
