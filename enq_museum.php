@@ -1,8 +1,6 @@
 <?php
 if(strlen($_POST["name"]) != 0){
   $name = $_POST["name"];
-  $course = $_POST["course"];
-  $visited = $_POST["visited"];
   $want = $_POST["want"];
   if (isset($_POST['visited']) && is_array($_POST['visited'])) {
     $visited_csv = implode(", ", $_POST["visited"]);
