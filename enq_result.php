@@ -1,5 +1,5 @@
 <?php
-  if (is_readable("result.csv") && $fp=fopen("result.csv", "r")) {
+  if (is_readable("answer_list.csv") && $fp=fopen("answer_list.csv", "r")) {
     flock($fp, LOCK_SH);
 
     $cnt["kahaku_vi"] = 0;
