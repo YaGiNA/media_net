@@ -72,13 +72,14 @@
     <p>
       <b>投稿フォーム</b>
       <form action="post.php" method="post">
-        名前:<input type="text" name="name"><br>
+        名前:<input type="text" name="name">
+				<div class="space"></div>
         投稿内容:<br>
-        <textarea name="content" rows="4" cols="40"></textarea><br>
+        <textarea name="content"></textarea><br>
         <input type="submit" value="投稿">
       </form>
     </p>
-    <hr>
+  	<div class="line"></div>
     <?php
       if(is_file("./log.csv")){
         if(is_readable("./log.csv")){
@@ -98,7 +99,7 @@
               echo "<p>".$count;
               echo ":<strong>名前: $content[0]</strong>  ";
               echo "投稿日時:<time>$content[1]</time><br>$content[2]</p>";
-              echo "<hr>";
+              echo "<div class=\"line\"></div>";
             }
           }
           flock($fp, LOCK_UN);

@@ -95,7 +95,7 @@
       ?>
       <hr>
       <p>
-        <a href="./view.php" target="_self">掲示板に戻る</a><br>
+        <a href="./review.php" target="_self">掲示板に戻る</a><br>
         <a href="./index.html" target="_self">トップに戻る</a>
       </p>
       <!-- Begin Footer -->

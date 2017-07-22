@@ -1521,3 +1521,8 @@ table span.cross {
 	display: inline-block;
 	text-align: center;
 }
+
+textarea{
+	width: 60%;
+	height: 10em;
+}
