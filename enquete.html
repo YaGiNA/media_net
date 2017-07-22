@@ -1,171 +1,174 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
+
 <head>
-<meta charset="UTF-8">
-<title>Enquete</title>
-<link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
-<link rel="stylesheet" type="text/css" href="style.css" media="all" />
-<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<!--[if IE 7]>
+	<meta charset="UTF-8">
+	<title>Enquete</title>
+	<link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<!--[if IE 7]>
 <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
 <![endif]-->
-<!--[if IE 8]>
+	<!--[if IE 8]>
 <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
 <![endif]-->
-<!--[if IE 9]>
+	<!--[if IE 9]>
 <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
 <![endif]-->
-<script type="text/javascript" src="style/js/jquery-1.6.4.min.js"></script>
-<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
-<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
-<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="style/js/carousel.js"></script>
-<script type="text/javascript" src="style/js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
-<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
+	<script type="text/javascript" src="style/js/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+	<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="style/js/carousel.js"></script>
+	<script type="text/javascript" src="style/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
 </head>
+
 <body>
-<!-- Begin Wrapper -->
-<div id="wrapper">
-	<!-- Begin Sidebar -->
-	<div id="sidebar">
-		 <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="Caprice" /></a></div>
+	<!-- Begin Wrapper -->
+	<div id="wrapper">
+		<!-- Begin Sidebar -->
+		<div id="sidebar">
+			<div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="Caprice" /></a></div>
 
-	<!-- Begin Menu -->
-    <div id="menu" class="menu-v">
-			<ul>
-        <li><a href="index.html">Home</a>
-        </li>
-        <li><a href="museums.html">Museums</a>
-        </li>
-        <li><a href="review.php">Review(BBS)</a>
-        </li>
-        <li><a href="enquete.html" class="active">Enquete</a>
-        </li>
-        
-        <li><a href="login.html">Login</a></li>
-      </ul>
-    </div>
-    <!-- End Menu -->
+			<!-- Begin Menu -->
+			<div id="menu" class="menu-v">
+				<ul>
+					<li><a href="index.html">Home</a>
+					</li>
+					<li><a href="museums.html">Museums</a>
+					</li>
+					<li><a href="review.php">Review(BBS)</a>
+					</li>
+					<li><a href="enquete.html" class="active">Enquete</a>
+					</li>
 
-
-    <div class="sidebox">
-    <ul class="share">
-    	<li><a href="#"><img src="style/images/icon-rss.png" alt="RSS" /></a></li>
-    	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
-    	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-    	<li><a href="#"><img src="style/images/icon-dribbble.png" alt="Dribbble" /></a></li>
-    	<li><a href="#"><img src="style/images/icon-linkedin.png" alt="LinkedIn" /></a></li>
-    </ul>
-    </div>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+			<!-- End Menu -->
 
 
-	</div>
-	<!-- End Sidebar -->
-
-	<!-- Begin Content -->
-	<div id="content">
-	<h1 class="title">Enquete</h1>
-	<div class="line"></div>
-	<div class="intro">アンケートページ</div>
-
-    <h3>アンケートフォーム</h3>
-
-    <p>以下の値を入力してください。</p>
+			<div class="sidebox">
+				<ul class="share">
+					<li><a href="#"><img src="style/images/icon-rss.png" alt="RSS" /></a></li>
+					<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
+					<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
+					<li><a href="#"><img src="style/images/icon-dribbble.png" alt="Dribbble" /></a></li>
+					<li><a href="#"><img src="style/images/icon-linkedin.png" alt="LinkedIn" /></a></li>
+				</ul>
+			</div>
 
 
-		<form  method="post" action="enq_museum.php">
-    <div class="one-half">
-    <h3>名前</h3>
-    <p><label>入力:</label><input type="text" name="name"></p>
-    </div>
+		</div>
+		<!-- End Sidebar -->
 
-    <div class="one-half last">
-    <h3>コース</h3>
-    <p>
-			<label>選択: <br></label>
-			<label for="md_radio">
+		<!-- Begin Content -->
+		<div id="content">
+			<h1 class="title">Enquete</h1>
+			<div class="line"></div>
+			<div class="intro">アンケートページ</div>
+
+			<h3>アンケートフォーム</h3>
+
+			<p>以下の値を入力してください。</p>
+
+
+			<form method="post" action="enq_museum.php">
+				<div class="one-half">
+					<h3>名前</h3>
+					<p><label>入力:</label><input type="text" name="name"></p>
+				</div>
+
+				<div class="one-half last">
+					<h3>コース</h3>
+					<p>
+						<label>選択: <br></label>
+						<label for="md_radio">
 				<input type="radio" id="md_radio" name="course" value="md" checked>メディア情報学 <br>
 			</label>
-			<label for="sc_radio">
+						<label for="sc_radio">
 		  	<input type="radio" id="sc_radio" name="course" value="sc">セキュリティ情報学 <br>
 			</label>
-		</p>
-    </div>
+					</p>
+				</div>
 
-    <div class="clear"></div>
+				<div class="clear"></div>
 
 
 
-    <div class="one-half">
-    <h3>行ったことがある博物館・美術館</h3>
-    <p>
-			<label for="kahaku_box_vi">
+				<div class="one-half">
+					<h3>行ったことがある博物館・美術館</h3>
+					<p>
+						<label for="kahaku_box_vi">
 			  <input type="checkbox" id="kahaku_box_vi" name="visited[]" value="kahaku_vi" >国立科学博物館<br>
 		  </label>
-			<label for="nmwa_box_vi">
+						<label for="nmwa_box_vi">
 			  <input type="checkbox" id="nmwa_box_vi" name="visited[]" value="nmwa_vi" >国立西洋美術館<br>
 			</label>
-			<label for="tnm_box_vi">
+						<label for="tnm_box_vi">
 				<input type="checkbox" id="tnm_box_vi" name="visited[]" value="tnm_vi" >東京国立博物館<br>
 			</label>
-			<label for="parasite_box_vi">
+						<label for="parasite_box_vi">
 			  <input type="checkbox" id="parasite_box_vi" name="visited[]" value="parasite_vi" >目黒寄生虫館<br>
 			</label>
-		</p>
-    </div>
+					</p>
+				</div>
 
-    <div class="one-half last">
-			<h3>行ってみたい博物館・美術館</h3>
-	    <p>
-				<label for="kahaku_box_wa">
+				<div class="one-half last">
+					<h3>行ってみたい博物館・美術館</h3>
+					<p>
+						<label for="kahaku_box_wa">
 				  <input type="checkbox" id="kahaku_box_wa" name="want[]" value="kahaku_wa" >国立科学博物館<br>
 			  </label>
-				<label for="nmwa_box_wa">
+						<label for="nmwa_box_wa">
 				  <input type="checkbox" id="nmwa_box_wa" name="want[]" value="nmwa_wa" >国立西洋美術館<br>
 				</label>
-				<label for="tnm_box_wa">
+						<label for="tnm_box_wa">
 					<input type="checkbox" id="tnm_box_wa" name="want[]" value="tnm_wa" >東京国立博物館<br>
 				</label>
-				<label for="parasite_box_wa">
+						<label for="parasite_box_wa">
 				  <input type="checkbox" id="parasite_box_wa" name="want[]" value="parasite_wa" >目黒寄生虫館<br>
 				</label>
-			</p>
+					</p>
+				</div>
+				<input type="submit" value="送る">
+			</form>
+
+			<div class="clear"></div>
+
+			<!-- Begin Footer -->
+			<div id="footer">
+				<div class="footer-box one-third">
+				</div>
+				<div class="footer-box one-third">
+					<h3>About</h3>
+					<p>これは、一都六県に所在する主な美術館や科学館の情報を掲載しております。</p>
+					<p>Yuta Yanagi #1510151<br>
+						<br>
+						<span class="lite1">Tel:</span> 080 5054 8347<br>
+						<span class="lite1">E-mail:</span> y1510151@edu.cc.uec.ac.jp</p>
+				</div>
+
+				<div class="footer-box one-third last">
+				</div>
+			</div>
+			<!-- End Footer -->
+
+
 		</div>
-		<input type="submit" value="送る">
-		</form>
-
-    <div class="clear"></div>
-
-    <!-- Begin Footer -->
-    <div id="footer">
-			<div class="footer-box one-third">
-	  	</div>
-	  	<div class="footer-box one-third">
-	  	<h3>About</h3>
-	  	<p>これは、一都六県に所在する主な美術館や科学館の情報を掲載しております。</p>
-	  	<p>Yuta Yanagi #1510151<br>
-	          <br>
-	          <span class="lite1">Tel:</span> 080 5054 8347<br>
-	          <span class="lite1">E-mail:</span> y1510151@edu.cc.uec.ac.jp</p>
-	  	</div>
-
-	  	<div class="footer-box one-third last">
-	  	</div>
-    </div>
-    <!-- End Footer -->
-
+		<!-- End Content -->
 
 	</div>
-	<!-- End Content -->
-
-</div>
-<!-- End Wrapper -->
-<div class="clear"></div>
-<script type="text/javascript" src="style/js/scripts.js"></script>
-<!--[if !IE]> -->
-<script type="text/javascript" src="style/js/jquery.corner.js"></script>
-<!-- <![endif]-->
+	<!-- End Wrapper -->
+	<div class="clear"></div>
+	<script type="text/javascript" src="style/js/scripts.js"></script>
+	<!--[if !IE]> -->
+	<script type="text/javascript" src="style/js/jquery.corner.js"></script>
+	<!-- <![endif]-->
 </body>
+
 </html>
