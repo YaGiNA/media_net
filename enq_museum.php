@@ -7,7 +7,7 @@ if(strlen($_POST["name"]) != 0){
   if (isset($_POST['visited']) && is_array($_POST['visited'])) {
     $visited_csv = implode(", ", $_POST["visited"]);
   } else {
-    $visited_csv = "null";
+    $want_csv = "null";
   }
 
   if (isset($_POST['want']) && is_array($_POST['want'])) {
