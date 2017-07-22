@@ -62,11 +62,11 @@ if(strlen($_POST["name"]) != 0){
 	<!-- Begin Menu -->
     <div id="menu" class="menu-v">
 			<ul>
-        <li><a href="index.html" class="active">Home</a>
+        <li><a href="index.html">Home</a>
         </li>
         <li><a href="museums.html">Museums</a>
         </li>
-        <li><a href="review.php">Review(BBS)</a>
+        <li><a href="review.php" class="active">Review(BBS)</a>
         </li>
         <li><a href="enquete.html">Enquete</a>
         </li>
