@@ -1,20 +1,29 @@
 <?php
-  if(isset($_COOKIE["id"])){
-    $name = $_COOKIE["id"];
+  if(strlen($_POST["name"]) != 0){
+    $name = htmlspecialchars($_POST["name"]);
   }
-  else{
-    $msg = "You are not permitted to view this page.<br>";
-    $msg .= "Please return to <a href='./login.html'>login page</a> and login again.";
-    exit($msg);
+  else {
+    $name = "no name";
   }
+  date_default_timezone_set("Asia/Tokyo");
+  $time = date("Y/m/j H:i:s");
+  $content = htmlspecialchars($_POST["content"]);
+
+  $fp = fopen("./log.csv", "a");
+  flock($fp, LOCK_EX);
+
+  $line = $name.",".$time.",".$content."\n";
+  fputs($fp, $line);
+
+  flock($fp, LOCK_UN);
+  fclose($fp);
  ?>
 
- <!DOCTYPE html>
  <!DOCTYPE HTML>
  <html lang="en-US">
  <head>
  <meta charset="UTF-8">
- <title>Enquete</title>
+ <title>投稿完了</title>
  <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
  <link rel="stylesheet" type="text/css" href="style.css" media="all" />
  <link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
@@ -51,11 +60,11 @@
          </li>
          <li><a href="museums.html">Museums</a>
          </li>
-         <li><a href="review.php">Review(BBS)</a>
+         <li><a href="review.php" class="active">Review(BBS)</a>
          </li>
-         <li><a href="enquete.html" class="active">Enquete</a>
+         <li><a href="enquete.html">Enquete</a>
          </li>
-         
+
          <li><a href="login.html">Login</a></li>
        </ul>
      </div>
@@ -64,11 +73,11 @@
 
      <div class="sidebox">
      <ul class="share">
-     	
+
      	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
      	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-     	
-     	
+
+
      </ul>
      </div>
 
@@ -78,8 +87,17 @@
 
  	<!-- Begin Content -->
  	<div id="content">
-      <h3>ようこそ</h3>
-      <?php echo $name."さん"; ?>
+ 	<h1 class="title">投稿完了</h1>
+ 	<div class="line"></div>
+ 	<div class="intro">投稿が完了しました。</div>
+      <?php
+      echo "<p><b>名前: ".$name."</b> 投稿日時: <time>".$time."</time><br>".$content."</p>";
+      ?>
+      <hr>
+      <p>
+        <a href="./review.php" target="_self">掲示板に戻る</a><br>
+        <a href="./index.html" target="_self">トップに戻る</a>
+      </p>
       <!-- Begin Footer -->
       <div id="footer">
   			<div class="footer-box one-third">

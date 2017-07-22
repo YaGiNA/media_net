@@ -9,12 +9,11 @@
   }
  ?>
 
- <!DOCTYPE html>
  <!DOCTYPE HTML>
  <html lang="en-US">
  <head>
  <meta charset="UTF-8">
- <title>Enquete</title>
+ <title>Login</title>
  <link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
  <link rel="stylesheet" type="text/css" href="style.css" media="all" />
  <link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
@@ -53,10 +52,10 @@
          </li>
          <li><a href="review.php">Review(BBS)</a>
          </li>
-         <li><a href="enquete.html" class="active">Enquete</a>
+         <li><a href="enquete.html">Enquete</a>
          </li>
-         
-         <li><a href="login.html">Login</a></li>
+
+         <li><a href="login.html" class="active">Login</a></li>
        </ul>
      </div>
      <!-- End Menu -->
@@ -64,11 +63,11 @@
 
      <div class="sidebox">
      <ul class="share">
-     	
+
      	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
      	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-     	
-     	
+
+
      </ul>
      </div>
 
@@ -78,36 +77,40 @@
 
  	<!-- Begin Content -->
  	<div id="content">
-      <h3>ようこそ</h3>
+ 	<h1 class="title">Welcome</h1>
+ 	<div class="line"></div>
+ 	<div class="intro">ﾅｲﾈー　ﾅﾆﾓﾅｲﾈー</div>
+      <h1>ようこそ</h1>
       <?php echo $name."さん"; ?>
-      <!-- Begin Footer -->
-      <div id="footer">
-  			<div class="footer-box one-third">
-  	  	</div>
-  	  	<div class="footer-box one-third">
-  	  	<h3>About</h3>
-  	  	<p>これは、一都六県に所在する主な美術館や科学館の情報を掲載しております。</p>
-  	  	<p>Yuta Yanagi #1510151<br>
-  	          <br>
-  	          <span class="lite1">Tel:</span> 080 5054 8347<br>
-  	          <span class="lite1">E-mail:</span> y1510151@edu.cc.uec.ac.jp</p>
-  	  	</div>
 
-  	  	<div class="footer-box one-third last">
-  	  	</div>
-      </div>
-      <!-- End Footer -->
+              <!-- Begin Footer -->
+              <div id="footer">
+          			<div class="footer-box one-third">
+          	  	</div>
+          	  	<div class="footer-box one-third">
+          	  	<h3>About</h3>
+          	  	<p>これは、一都六県に所在する主な美術館や科学館の情報を掲載しております。</p>
+          	  	<p>Yuta Yanagi #1510151<br>
+          	          <br>
+          	          <span class="lite1">Tel:</span> 080 5054 8347<br>
+          	          <span class="lite1">E-mail:</span> y1510151@edu.cc.uec.ac.jp</p>
+          	  	</div>
+
+          	  	<div class="footer-box one-third last">
+          	  	</div>
+              </div>
+              <!-- End Footer -->
 
 
-  	</div>
-  	<!-- End Content -->
+          	</div>
+          	<!-- End Content -->
 
-  </div>
-  <!-- End Wrapper -->
-  <div class="clear"></div>
-  <script type="text/javascript" src="style/js/scripts.js"></script>
-  <!--[if !IE]> -->
-  <script type="text/javascript" src="style/js/jquery.corner.js"></script>
-  <!-- <![endif]-->
-  </body>
-  </html>
+          </div>
+          <!-- End Wrapper -->
+          <div class="clear"></div>
+          <script type="text/javascript" src="style/js/scripts.js"></script>
+          <!--[if !IE]> -->
+          <script type="text/javascript" src="style/js/jquery.corner.js"></script>
+          <!-- <![endif]-->
+          </body>
+          </html>

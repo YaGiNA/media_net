@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Enquete</title>
+	<title>Register</title>
 	<link rel="shortcut icon" type="image/x-icon" href="style/images/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
@@ -43,10 +43,10 @@
 					</li>
 					<li><a href="review.php">Review(BBS)</a>
 					</li>
-					<li><a href="enquete.html" class="active">Enquete</a>
+					<li><a href="enquete.html">Enquete</a>
 					</li>
 
-					<li><a href="login.html">Login</a></li>
+					<li><a href="login.html" class="active">Login</a></li>
 				</ul>
 			</div>
 			<!-- End Menu -->
@@ -68,78 +68,23 @@
 
 		<!-- Begin Content -->
 		<div id="content">
-			<h1 class="title">Enquete</h1>
+			<h1 class="title">ユーザ登録</h1>
 			<div class="line"></div>
-			<div class="intro">アンケートページ</div>
-
-			<h3>アンケートフォーム</h3>
-
-			<p>以下の値を入力してください。</p>
-
-
-			<form method="post" action="enq_museum.php">
-				<div class="one-half">
-					<h3>名前</h3>
-					<p><label>入力:</label><input type="text" name="name"></p>
-				</div>
-
-				<div class="one-half last">
-					<h3>コース</h3>
-					<p>
-						<label>選択: <br></label>
-						<label for="md_radio">
-				<input type="radio" id="md_radio" name="course" value="md" checked>メディア情報学 <br>
-			</label>
-						<label for="sc_radio">
-		  	<input type="radio" id="sc_radio" name="course" value="sc">セキュリティ情報学 <br>
-			</label>
-					</p>
-				</div>
-
-				<div class="clear"></div>
-
-
-
-				<div class="one-half">
-					<h3>行ったことがある博物館・美術館</h3>
-					<p>
-						<label for="kahaku_box_vi">
-			  <input type="checkbox" id="kahaku_box_vi" name="visited[]" value="kahaku_vi" >国立科学博物館<br>
-		  </label>
-						<label for="nmwa_box_vi">
-			  <input type="checkbox" id="nmwa_box_vi" name="visited[]" value="nmwa_vi" >国立西洋美術館<br>
-			</label>
-						<label for="tnm_box_vi">
-				<input type="checkbox" id="tnm_box_vi" name="visited[]" value="tnm_vi" >東京国立博物館<br>
-			</label>
-						<label for="parasite_box_vi">
-			  <input type="checkbox" id="parasite_box_vi" name="visited[]" value="parasite_vi" >目黒寄生虫館<br>
-			</label>
-					</p>
-				</div>
-
-				<div class="one-half last">
-					<h3>行ってみたい博物館・美術館</h3>
-					<p>
-						<label for="kahaku_box_wa">
-				  <input type="checkbox" id="kahaku_box_wa" name="want[]" value="kahaku_wa" >国立科学博物館<br>
-			  </label>
-						<label for="nmwa_box_wa">
-				  <input type="checkbox" id="nmwa_box_wa" name="want[]" value="nmwa_wa" >国立西洋美術館<br>
-				</label>
-						<label for="tnm_box_wa">
-					<input type="checkbox" id="tnm_box_wa" name="want[]" value="tnm_wa" >東京国立博物館<br>
-				</label>
-						<label for="parasite_box_wa">
-				  <input type="checkbox" id="parasite_box_wa" name="want[]" value="parasite_wa" >目黒寄生虫館<br>
-				</label>
-					</p>
-				</div>
-				<input type="submit" value="送る">
+			<div class="intro">登録してください</div>
+			<form action="regist.php" method="post">
+				<table border="0">
+					<tr>
+						<td>ID</td>
+						<td><input type="text" name="id"></td>
+					</tr>
+					<tr>
+						<td>PW</td>
+						<td><input type="password" name="pw"></td>
+					</tr>
+				</table>
+				<input type="submit" value="送信">
 			</form>
-
-			<div class="clear"></div>
-
+			<a href="./login.html" target="_self">ログインページへ</a>
 			<!-- Begin Footer -->
 			<div id="footer">
 				<div class="footer-box one-third">
