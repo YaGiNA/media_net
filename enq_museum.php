@@ -4,8 +4,6 @@ if(strlen($_POST["name"]) != 0){
   $course = $_POST["course"];
   $visited = $_POST["visited"];
   $want = $_POST["want"];
-  var_dump($visited);
-  var_dump($want);
 
   $fp = fopen("./result.csv", "a+");
   flock($fp, LOCK_EX);
@@ -86,10 +84,38 @@ if(strlen($_POST["name"]) != 0){
 
 	<!-- Begin Content -->
 	<div id="content">
+  <?php if(strlen($_POST["name"]) != 0): ?>
 	<h1 class="title">回答ありがとうございました</h1>
 	<div class="line"></div>
 	<div class="intro">回答内容は以下の通りです。</div>
-    <?php if(strlen($_POST["name"]) != 0): ?>
+      <table>
+        <tr>
+          <th>氏名</th><th><?php echo $name ?></th>
+        </tr>
+        <tr>
+          <th>コース</th><th><?php echo $course ?></th>
+        </tr>
+        <tr>
+          <th>行ったことがある美術館･博物館</th>
+          <th>
+            <?php
+            for($i = 0 ; $i < count($visited); $i++){
+              echo $visited[$i] ;
+            }
+            ?>
+          </th>
+        </tr>
+        <tr>
+          <th>行ってみたい美術館･博物館</th>
+          <th>
+            <?php
+            for($i = 0 ; $i < count($want); $i++){
+              echo $want[$i] ;
+            }
+            ?>
+          </th>
+        </tr>
+      </table>
       <p>
         ※凡例
         コース名: md(メディア情報学), sc(セキュリティ情報学)<br>
