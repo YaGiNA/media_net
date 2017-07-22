@@ -5,9 +5,11 @@ if(strlen($_POST["name"]) != 0){
   $visited = $_POST["visited"];
   $want = $_POST["want"];
 
-  $fp = fopen("./result.csv", "a+");
+  $fp = fopen("./answer_list.csv", "a+");
   flock($fp, LOCK_EX);
-  $output = join(",", array($name, $course, $visited, $want))."\n";
+  $output = join(",", array($name, $course))."\n";
+  file_put_contents("visited.dat", serialize($visited));
+  file_put_contents("want.dat", serialize($want));
   fputs($fp, $output);
   flock($fp, LOCK_UN);
   fclose($fp);
