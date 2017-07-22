@@ -2,10 +2,12 @@
 if(strlen($_POST["name"]) != 0){
   $name = $_POST["name"];
   $course = $_POST["course"];
+  $visited = $_POST["visited"];
+  $want = $_POST["want"];
   if (isset($_POST['visited']) && is_array($_POST['visited'])) {
-    $visited = implode(", ", $_POST["visited"]);
+    $visited_csv = implode(", ", $_POST["visited"]);
   } else {
-    $visited = "null";
+    $visited_csv = "null";
   }
 
   if (isset($_POST['want']) && is_array($_POST['want'])) {
@@ -16,7 +18,7 @@ if(strlen($_POST["name"]) != 0){
 
   $fp = fopen("./answer_list.csv", "a+");
   flock($fp, LOCK_EX);
-  $output = join(",", array($name, $course, $visited, $want))."\n";
+  $output = join(",", array($name, $course, $visited_csv, $want_csv))."\n";
   fputs($fp, $output);
   flock($fp, LOCK_UN);
   fclose($fp);
