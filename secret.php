@@ -63,11 +63,11 @@
 
      <div class="sidebox">
      <ul class="share">
-     	<li><a href="#"><img src="style/images/icon-rss.png" alt="RSS" /></a></li>
+     	
      	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
      	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-     	<li><a href="#"><img src="style/images/icon-dribbble.png" alt="Dribbble" /></a></li>
-     	<li><a href="#"><img src="style/images/icon-linkedin.png" alt="LinkedIn" /></a></li>
+     	
+     	
      </ul>
      </div>
 
