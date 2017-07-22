@@ -70,7 +70,7 @@ if(strlen($_POST["name"]) != 0){
         </li>
         <li><a href="enquete.html" class="active">Enquete</a>
         </li>
-        
+
         <li><a href="login.html">Login</a></li>
       </ul>
     </div>
@@ -79,11 +79,11 @@ if(strlen($_POST["name"]) != 0){
 
     <div class="sidebox">
     <ul class="share">
-    	
+
     	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
     	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-    	
-    	
+
+
     </ul>
     </div>
 

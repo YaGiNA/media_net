@@ -54,7 +54,7 @@
          </li>
          <li><a href="enquete.html">Enquete</a>
          </li>
-         
+
          <li><a href="login.html" class="active">Login</a></li>
        </ul>
      </div>
@@ -63,11 +63,11 @@
 
      <div class="sidebox">
      <ul class="share">
-     	
+
      	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
      	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-     	
-     	
+
+
      </ul>
      </div>
 
