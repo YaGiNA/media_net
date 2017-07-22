@@ -3,13 +3,13 @@ if(strlen($_POST["name"]) != 0){
   $name = $_POST["name"];
   $course = $_POST["course"];
   if (isset($_POST['visited']) && is_array($_POST['visited'])) {
-    $visited_csv = implode(", ", $_POST["visited"]);
+    $visited_csv = implode(",", $_POST["visited"]);
   } else {
     $visited_csv = "null";
   }
 
   if (isset($_POST['want']) && is_array($_POST['want'])) {
-    $want_csv = implode(", ", $_POST["want"]);
+    $want_csv = implode(",", $_POST["want"]);
   } else {
     $want_csv = "null";
   }
