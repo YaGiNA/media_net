@@ -97,12 +97,65 @@
       <h1 class="title">結果</h1>
     	<div class="line"></div>
     	<div class="intro">集計結果は以下の通りです。</div>
-      <p>
-        商品名 獲得数[票]<br>
-        チキンおろしたれ <?php echo $cnt["ct"] ?><br>
-        クリームチーズメンチカツ <?php echo $cnt["cc"] ?><br>
-        カツカレー <?php echo $cnt["sh"] ?><br>
-      </p>
+      <table>
+        <tr>
+          <th>訪れたことがある博物館･美術館</th><th>投票数</th>
+        </tr>
+        <tr>
+          <th>国立科学博物館</th>
+          <th>
+            <?php echo $cnt["kahaku_vi"]; ?>
+          </th>
+        </tr>
+        <tr>
+          <th>国立西洋美術館</th>
+          <th>
+            <?php echo $cnt["tnm_vi"]; ?>
+          </th>
+        </tr>
+        <tr>
+          <th>東京国立博物館</th>
+          <th>
+            <?php echo $cnt["kahaku_vi"]; ?>
+          </th>
+        </tr>
+        <tr>
+          <th>目黒寄生虫館</th>
+          <th>
+            <?php echo $cnt["parasite_vi"]; ?>
+          </th>
+        </tr>
+      </table>
+      <div class="clear"></div>
+      <table>
+        <tr>
+          <th>行ってみたい博物館･美術館</th><th>投票数</th>
+        </tr>
+        <tr>
+          <th>国立科学博物館</th>
+          <th>
+            <?php echo $cnt["kahaku_wa"]; ?>
+          </th>
+        </tr>
+        <tr>
+          <th>国立西洋美術館</th>
+          <th>
+            <?php echo $cnt["tnm_wa"]; ?>
+          </th>
+        </tr>
+        <tr>
+          <th>東京国立博物館</th>
+          <th>
+            <?php echo $cnt["kahaku_wa"]; ?>
+          </th>
+        </tr>
+        <tr>
+          <th>目黒寄生虫館</th>
+          <th>
+            <?php echo $cnt["parasite_wa"]; ?>
+          </th>
+        </tr>
+      </table>
       <p>
         <a href="./form.html" target="_self">フォームに戻る</a>
       </p>
