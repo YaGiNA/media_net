@@ -14,11 +14,9 @@
 
     while ($csvline = fgets($fp)) {
       $data = explode(",", trim($csvline, "\n"));
-      if (count($data) == 3) {
-        $menu = (string)$data[2];
-        if (isset($cnt[$menu])) {
-          $cnt[$menu]++;
-        }
+      $menu = (string)$data[2];
+      if (isset($cnt[$menu])) {
+        $cnt[$menu]++;
       }
     }
     flock($fp, LOCK_UN);
@@ -140,13 +138,13 @@
         <tr>
           <th>国立西洋美術館</th>
           <th>
-            <?php echo $cnt["tnm_wa"]; ?>
+            <?php echo $cnt["nmwa_wa"]; ?>
           </th>
         </tr>
         <tr>
           <th>東京国立博物館</th>
           <th>
-            <?php echo $cnt["kahaku_wa"]; ?>
+            <?php echo $cnt["tnm_wa"]; ?>
           </th>
         </tr>
         <tr>
