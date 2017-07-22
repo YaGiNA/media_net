@@ -71,13 +71,13 @@
 	<div class="intro">レビュー等にご利用ください。</div>
     <p>
       <b>投稿フォーム</b>
-      <form action="post.php" method="post">
-        名前:<input type="text" name="name">
-				<div class="space"></div>
-        投稿内容:<br>
-        <textarea name="content"></textarea><br>
-        <input type="submit" value="投稿">
-      </form>
+			<form action="post.php" method="post">
+				<p>名前:<input type="text" name="name"></p>
+				<p>投稿内容:<br>
+					<textarea name="content"></textarea>
+				</p>
+				<input type="submit" value="投稿">
+			</form>
     </p>
   	<div class="line"></div>
     <?php
