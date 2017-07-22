@@ -4,7 +4,7 @@
   }
   else{
     $msg = "You are not permitted to view this page.<br>";
-    $msg .= "Please return to <a href='./login.html'>login page</a> and login again.";
+    $msg .= "Please return to <a href='./login.php'>login page</a> and login again.";
     exit($msg);
   }
  ?>
