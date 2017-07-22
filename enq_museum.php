@@ -127,6 +127,7 @@ if(strlen($_POST["name"]) != 0){
         博物館･美術館名: kahaku(国立科学博物館), nmwa(国立西洋美術館), <br>
         tnm(東京国立博物館), parasite(目黒寄生虫館) <br>
         末尾: _vi(訪れたことがある), _wa(訪れたい)
+        null: 選択なし
       </p>
       <p>
         <a href="./result.php" target="_self">アンケート集計結果を見る</a>
