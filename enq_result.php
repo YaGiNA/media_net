@@ -15,7 +15,7 @@
     while ($csvline = fgets($fp)) {
       $data = explode(",", trim($csvline, "\n"));
       for ($i=2; $i < count($data); $i++) {
-        $menu = (string)$data[i];
+        $menu = (string)$data[$i];
         if (isset($cnt[$menu])) {
           $cnt[$menu]++;
         }
