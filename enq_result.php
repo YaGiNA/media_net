@@ -14,9 +14,11 @@
 
     while ($csvline = fgets($fp)) {
       $data = explode(",", trim($csvline, "\n"));
-      $menu = (string)$data[2];
-      if (isset($cnt[$menu])) {
-        $cnt[$menu]++;
+      for ($i=2; $i < count($data); $i++) {
+        $menu = (string)$data[i];
+        if (isset($cnt[$menu])) {
+          $cnt[$menu]++;
+        }
       }
     }
     flock($fp, LOCK_UN);
