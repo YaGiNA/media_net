@@ -66,9 +66,9 @@ if(strlen($_POST["name"]) != 0){
         </li>
         <li><a href="museums.html">Museums</a>
         </li>
-        <li><a href="review.php" class="active">Review(BBS)</a>
+        <li><a href="review.php">Review(BBS)</a>
         </li>
-        <li><a href="enquete.html">Enquete</a>
+        <li><a href="enquete.html" class="active">Enquete</a>
         </li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="login.html">Login</a></li>
