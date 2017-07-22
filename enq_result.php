@@ -157,7 +157,7 @@
         </tr>
       </table>
       <p>
-        <a href="./form.html" target="_self">フォームに戻る</a>
+        <a href="./enquete.html" target="_self">フォームに戻る</a>
       </p>
     <?php else: ?>
       <p>CSVファイルがありません。前回講義の実習は終わりましたか？</p>
