@@ -66,7 +66,7 @@
          </li>
          <li><a href="museums.html">Museums</a>
          </li>
-         <li><a href="review.html">Review(BBS)</a>
+         <li><a href="review.php">Review(BBS)</a>
          </li>
          <li><a href="enquete.html">Enquete</a>
          </li>
