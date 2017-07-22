@@ -130,8 +130,8 @@ if(strlen($_POST["name"]) != 0){
         null: 選択なし
       </p>
       <p>
-        <a href="./result.php" target="_self">アンケート集計結果を見る</a>
-        <a href="./form.html" target="_self">フォームに戻る</a>
+        <a href="./enq_result.php" target="_self">アンケート集計結果を見る</a>
+        <a href="./enquete.html" target="_self">フォームに戻る</a>
       </p>
     <?php else: ?>
       <p>enquete入力に不備があります。enquete入力画面に戻って再入力してください。</p>
