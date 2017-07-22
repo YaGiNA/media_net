@@ -71,7 +71,7 @@ if(strlen($_POST["name"]) != 0){
         <li><a href="enquete.html" class="active">Enquete</a>
         </li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="login.php">Login</a></li>
+        <li><a href="login.html">Login</a></li>
       </ul>
     </div>
     <!-- End Menu -->
