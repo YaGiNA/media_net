@@ -110,9 +110,7 @@ if(strlen($_POST["name"]) != 0){
           <th>行ったことがある美術館･博物館</th>
           <th>
             <?php
-            for($i = 0 ; $i < count($visited); $i++){
-              echo $visited[$i] ;
-            }
+            echo $visited_csv
             ?>
           </th>
         </tr>
@@ -120,9 +118,7 @@ if(strlen($_POST["name"]) != 0){
           <th>行ってみたい美術館･博物館</th>
           <th>
             <?php
-            for($i = 0 ; $i < count($want); $i++){
-              echo $want[$i] ;
-            }
+            echo $want_csv
             ?>
           </th>
         </tr>
