@@ -1,6 +1,6 @@
 (function likeButton() {
   var likeElm = document.createElement('div');
-  likeElm.innerHTML = '<div class="fb-like" data-action="like" data-href="http://example.com/" data-layout="button_count" data-share="false" data-size="small"></div>';
+  likeElm.innerHTML = '<div class="fb-like" data-action="like" data-href="http://medianet.inf.uec.ac.jp/~y1510151/" data-layout="button_count" data-share="false" data-size="small"></div>';
 
   window.addEventListener('load', function() {
     document.querySelector('.facebook').appendChild(likeElm);
