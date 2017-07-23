@@ -28,6 +28,17 @@
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 	<!-- Begin Wrapper -->
 	<div id="wrapper">
 		<!-- Begin Sidebar -->
@@ -69,9 +80,9 @@
 							}(document, 'script', 'twitter-wjs');
 						</script>
 					</li>
-					<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-
-
+					<li>
+						<div class="fb-like" data-href="http://medianet.inf.uec.ac.jp/~y1510151" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+					</li>
 				</ul>
 			</div>
 
@@ -137,7 +148,8 @@
 					<p>Yuta Yanagi #1510151<br>
 						<br>
 						<span class="lite1">Tel:</span> 080 5054 8347<br>
-						<span class="lite1">E-mail:</span> y1510151@edu.cc.uec.ac.jp</p>
+						<span class="lite1">E-mail:</span> y1510151@edu.cc.uec.ac.jp
+					</p>
 				</div>
 
 				<div class="footer-box one-third last">
