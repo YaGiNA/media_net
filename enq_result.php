@@ -89,7 +89,7 @@
 
  	<!-- Begin Content -->
  	<div id="content">
-    <?php if(is_readable("./form.html")): ?>
+    <?php if(is_readable("./enquete.html")): ?>
       <h1 class="title">結果</h1>
     	<div class="line"></div>
     	<div class="intro">集計結果は以下の通りです。</div>
