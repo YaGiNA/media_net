@@ -85,11 +85,7 @@
 
      <div class="sidebox">
      <ul class="share">
-
-     	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
-     	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-
-
+     	<li class="item twitter"></li>
      </ul>
      </div>
 
@@ -131,6 +127,7 @@
     </div>
     <!-- End Wrapper -->
     <div class="clear"></div>
+    <script type="text/javascript" src="style/js/tweet.js"></script>
     <script type="text/javascript" src="style/js/scripts.js"></script>
     <!--[if !IE]> -->
     <script type="text/javascript" src="style/js/jquery.corner.js"></script>

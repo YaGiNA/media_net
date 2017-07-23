@@ -79,11 +79,7 @@
 
      <div class="sidebox">
      <ul class="share">
-
-     	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
-     	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
-
-
+     	<li class="item twitter"></li>
      </ul>
      </div>
 
@@ -93,7 +89,7 @@
 
  	<!-- Begin Content -->
  	<div id="content">
-    <?php if(is_readable("./form.html")): ?>
+    <?php if(is_readable("./enquete.html")): ?>
       <h1 class="title">結果</h1>
     	<div class="line"></div>
     	<div class="intro">集計結果は以下の通りです。</div>
@@ -110,13 +106,13 @@
         <tr>
           <th>国立西洋美術館</th>
           <th>
-            <?php echo $cnt["tnm_vi"]; ?>
+            <?php echo $cnt["nmwa_vi"]; ?>
           </th>
         </tr>
         <tr>
           <th>東京国立博物館</th>
           <th>
-            <?php echo $cnt["kahaku_vi"]; ?>
+            <?php echo $cnt["tnm_vi"]; ?>
           </th>
         </tr>
         <tr>
@@ -187,6 +183,7 @@
 </div>
 <!-- End Wrapper -->
 <div class="clear"></div>
+<script type="text/javascript" src="style/js/tweet.js"></script>
 <script type="text/javascript" src="style/js/scripts.js"></script>
 <!--[if !IE]> -->
 <script type="text/javascript" src="style/js/jquery.corner.js"></script>

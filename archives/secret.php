@@ -65,8 +65,8 @@
      <div class="sidebox">
      <ul class="share">
      	
-     	<li><a href="#"><img src="style/images/icon-facebook.png" alt="Facebook" /></a></li>
-     	<li><a href="#"><img src="style/images/icon-twitter.png" alt="Twitter" /></a></li>
+     	<li class="item twitter"></li>
+     	
      	
      	
      </ul>
