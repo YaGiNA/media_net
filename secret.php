@@ -63,11 +63,7 @@
 
      <div class="sidebox">
      <ul class="share">
-
      	<li class="item twitter"></li>
-     	
-
-
      </ul>
      </div>
 
