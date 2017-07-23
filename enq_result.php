@@ -106,13 +106,13 @@
         <tr>
           <th>国立西洋美術館</th>
           <th>
-            <?php echo $cnt["tnm_vi"]; ?>
+            <?php echo $cnt["nmwa_wa"]; ?>
           </th>
         </tr>
         <tr>
           <th>東京国立博物館</th>
           <th>
-            <?php echo $cnt["kahaku_vi"]; ?>
+            <?php echo $cnt["tnm_vi"]; ?>
           </th>
         </tr>
         <tr>
