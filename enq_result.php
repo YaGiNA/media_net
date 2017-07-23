@@ -106,7 +106,7 @@
         <tr>
           <th>国立西洋美術館</th>
           <th>
-            <?php echo $cnt["nmwa_wa"]; ?>
+            <?php echo $cnt["nmwa_vi"]; ?>
           </th>
         </tr>
         <tr>
