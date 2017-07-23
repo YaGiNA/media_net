@@ -157,6 +157,7 @@ if(strlen($_POST["name"]) != 0){
 </div>
 <!-- End Wrapper -->
 <div class="clear"></div>
+<script type="text/javascript" src="style/js/tweet.js"></script>
 <script type="text/javascript" src="style/js/scripts.js"></script>
 <!--[if !IE]> -->
 <script type="text/javascript" src="style/js/jquery.corner.js"></script>

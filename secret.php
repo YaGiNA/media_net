@@ -78,35 +78,32 @@
  	<div class="intro">ﾅｲﾈー　ﾅﾆﾓﾅｲﾈー</div>
       <h1>ようこそ</h1>
       <?php echo $name."さん"; ?>
-
-              <!-- Begin Footer -->
-              <div id="footer">
-          			<div class="footer-box one-third">
-          	  	</div>
-          	  	<div class="footer-box one-third">
-          	  	<h3>About</h3>
-          	  	<p>これは、一都六県に所在する主な美術館や科学館の情報を掲載しております。</p>
-          	  	<p>Yuta Yanagi #1510151<br>
-          	          <br>
-          	          <span class="lite1">Tel:</span> 080 5054 8347<br>
-          	          <span class="lite1">E-mail:</span> y1510151@edu.cc.uec.ac.jp</p>
-          	  	</div>
-
-          	  	<div class="footer-box one-third last">
-          	  	</div>
-              </div>
-              <!-- End Footer -->
-
-
-          	</div>
-          	<!-- End Content -->
-
+      <!-- Begin Footer -->
+      <div id="footer">
+        <div class="footer-box one-third">
+        </div>
+        <div class="footer-box one-third">
+          <h3>About</h3>
+          <p>これは、一都六県に所在する主な美術館や科学館の情報を掲載しております。</p>
+          <p>Yuta Yanagi #1510151<br>
+            <br>
+            <span class="lite1">Tel:</span> 080 5054 8347<br>
+            <span class="lite1">E-mail:</span> y1510151@edu.cc.uec.ac.jp</p>
           </div>
-          <!-- End Wrapper -->
-          <div class="clear"></div>
-          <script type="text/javascript" src="style/js/scripts.js"></script>
-          <!--[if !IE]> -->
-          <script type="text/javascript" src="style/js/jquery.corner.js"></script>
-          <!-- <![endif]-->
-          </body>
-          </html>
+          <div class="footer-box one-third last">
+          </div>
+        </div>
+        <!-- End Footer -->
+
+      </div>
+      <!-- End Content -->
+    </div>
+    <!-- End Wrapper -->
+    <div class="clear"></div>
+    <script type="text/javascript" src="style/js/tweet.js"></script>
+    <script type="text/javascript" src="style/js/scripts.js"></script>
+    <!--[if !IE]> -->
+    <script type="text/javascript" src="style/js/jquery.corner.js"></script>
+    <!-- <![endif]-->
+  </body>
+  </html>
