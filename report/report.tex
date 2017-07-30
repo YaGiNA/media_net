@@ -1,0 +1,179 @@
+\documentclass[11pt,a4paper, uplatex]{jsarticle}
+%
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{ascmac}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage{url}
+\usepackage[usenames]{color}
+\definecolor{dkblue}{rgb}{0.0, 0.0, 0.55}
+\definecolor{dkgreen}{rgb}{0.0, 0.2, 0.13}
+\definecolor{saddlebrown}{rgb}{0.55, 0.27, 0.07}
+\lstset{
+    frame=single,
+    numbers=left,
+    tabsize=2
+}
+\lstset{
+  language        = php,
+  basicstyle      = \small\ttfamily,
+  keywordstyle    = \color{dkblue},
+  stringstyle     = \color{red},
+  identifierstyle = \color{dkgreen},
+  commentstyle    = \color{gray},
+  emph            =[1]{php},
+  emphstyle       =[1]\color{black},
+  emph            =[2]{if,and,or,else},
+  emphstyle       =[2]\color{saddlebrown}
+}
+%
+\setlength{\textwidth}{\fullwidth}
+\setlength{\textheight}{40\baselineskip}
+\addtolength{\textheight}{\topskip}
+\setlength{\voffset}{-0.2in}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+%
+\newcommand{\divergence}{\mathrm{div}\,}  %ダイバージェンス
+\newcommand{\grad}{\mathrm{grad}\,}  %グラディエント
+\newcommand{\rot}{\mathrm{rot}\,}  %ローテーション
+%
+\title{メディアネットワーク 最終レポート}
+\author{1510151  栁 裕太}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+\section{トップページURL}
+Museums
+
+ \url{http://medianet.inf.uec.ac.jp/~y1510151/}
+
+※CAUTION
+
+学内専用。学外からはVPN経由のみアクセス可能。
+
+\section{概要}
+\subsection{テーマ・趣旨}
+関東及び東京都内には、多くの博物館や美術館が点在している。
+更に、一部では学生証の提示で無償あるいは割引で入館できるため、
+非常に訪れやすい環境が整っている。
+しかしながら、何処に何を扱う博物館があるのか、或いは何を見るべきなのかが浸透していないのか、
+あまり訪れる学生が少ないのが現状である。
+そこで、一都六県、特に東京都内の博物館・美術館を一覧で表示し、
+公式HPへのリンクをまとめることで、どの博物館・美術館に行くかを調べやすくするWEBサイト
+「Museums」を作成することにした。
+
+\subsection{閲覧者に提供するもの\label{info}}
+一都六県(主に東京都内)に点在する博物館・美術館の
+\begin{itemize}
+ \item 概要
+ \item 外観
+ \item 公式HPへのリンク
+\end{itemize}
+を提供する。また、詳しい情報は公式HPへのリンクによって得ることが可能。
+
+\subsection{ホームページ側のメリット}
+点在する博物館・美術館を1つにまとめることにより、簡単に行きたい所を捜すことが可能となる。
+また、レビュー(BBS)により、実際に訪れた人の感想といった情報も簡単に得られ、
+自らも投稿することで行きたい人・行った人によるコミュニティを形成することができる。
+
+\section{ページの内容}
+
+\subsection{トップページ}
+所蔵している博物館・美術館の外観がページ上部にスライドショーで存在する。
+また、その下にホームページの説明(概要、所蔵している施設の説明)が入る。
+
+\subsection{博物館・美術館一覧ページ}
+所蔵している博物館・美術館の外観・概要の一部(一部冒頭のみ)が入る。
+概要の文章が長い場合は、後部が省略されて"read more"と続きを読むためのリンクが入る。
+このリンクを選択すると詳細ページへ遷移される。
+
+\subsection{博物館・美術館詳細ページ}
+各博物館・美術館の詳細が表示される。
+記述される内容は\ref{info}節の通りである。
+
+\subsection{レビュー(BBS)}
+講義内で扱ったレビューをここに適用した。
+
+\subsection{アンケート}
+アンケート内容は以下の通りである。
+\begin{itemize}
+ \item 名前
+ \item コース
+ \item 訪れたことがある博物館・美術館
+ \item 今後訪れたい博物館・美術館
+\end{itemize}
+なお、上2つの項目は講義のままであり、
+下2つの項目はチェックボックスで複数選択・無選択が可能である。
+
+\subsection{ログインページ}
+ユーザ作成機能とログイン機能を併せ持っている。
+その場でユーザを作成してログインすることが可能となっている。
+ログインページの内部の情報はほぼ空となっている。
+
+\section{各ページの関連・遷移方法}
+すべてのページに共通してサイドバーにホームページののロゴと各ページ(詳細ページ除く)へのリンク、
+そしてツイート共有へのリンクがが掲載されている。
+Twitter以外の共有リンクについてであるが、他のサービスも検討したものの、
+ホームページの所在がプロキシを経由しているため、実装を断念した。
+
+また、同時に全ページにフッターが設置されており、開発者の連絡先とホームページの概要が記載されている。
+
+\section{アピール内容}
+\subsection{面白いと考えた点}
+\subsubsection{アンケートの設問}
+今回、アンケートとして「訪れた」「訪れたい」博物館・美術館の調査を行った。
+ここで、講義では扱っていないラジオボタン方式ではなく、チェックボックス形式を採用することで、
+複数の選択を可能なものとした点が挙げられる。
+
+
+\subsection{工夫した点}
+\subsubsection{チェックボックスによるアンケート質問の集計方法}
+先述のチェックボックスによる集計方法であるが、以下に調査・結果ページの該当する処理を記述する。
+\begin{lstlisting}[caption=enquete.html: 調査ページ一部,label=enquete,language=html]
+  <label for="kahaku_box_vi" >
+   <input
+    type="checkbox"
+    id="kahaku_box_vi"
+    name="visited[]"
+    value="kahaku_vi"
+    >
+    国立科学博物館<br>
+  </label>
+\end{lstlisting}
+
+調査ページから一部を抜粋した。各設問ごとに\texttt{name}タグの名前の末尾に\texttt{[]}
+を配置し、各質問における解答を配列化している。
+
+\begin{lstlisting}[caption=enq_result.php: 結果表示ページ,label=result,language=php]
+  $cnt["kahaku_vi"] = 0;
+  $cnt["nmwa_vi"] = 0;
+  $cnt["tnm_vi"] = 0;
+  $cnt["parasite_vi"] = 0;
+
+  $cnt["kahaku_wa"] = 0;
+  $cnt["nmwa_wa"] = 0;
+  $cnt["tnm_wa"] = 0;
+  $cnt["parasite_wa"] = 0;
+
+  while ($csvline = fgets($fp)) {
+    $data = explode(",", trim($csvline, "\n"));
+    for ($i=2; $i < count($data); $i++) {
+      $menu = (string)$data[$i];
+      if (isset($cnt[$menu])) {
+        $cnt[$menu]++;
+      }
+    }
+  }$
+\end{lstlisting}
+
+集計ページでは、まず各項目の結果を入れる部分を初期化し、
+その後結果が記録されたCSVファイルを開き、カンマで分割し、
+記録された該当する変数をインクリメントしている。
+
+\end{document}
